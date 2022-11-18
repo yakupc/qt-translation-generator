@@ -4,7 +4,7 @@ import os
 from .language_codes import language_dict
 
 class QtTranslationFileGenerator:
-    def __init__(self, src_translation_file_path) -> None:
+    def __init__(self, src_translation_file_path, output_dir = '.') -> None:
         """Initializes Qt translation file generator
 
         Args:
@@ -14,6 +14,10 @@ class QtTranslationFileGenerator:
         self.src_translation_file_name = os.path.basename(self.src_translation_file_path)
         # get file name without extension
         self.src_translation_file_name = os.path.splitext(self.src_translation_file_name)[0] 
+        self.output_dir                = output_dir
+        
+        if not os.path.exists(output_dir):
+            os.mkdir(output_dir)
 
         if self.src_translation_file_name is None:
             raise ValueError("Translation file name is not valid.")
@@ -23,6 +27,8 @@ class QtTranslationFileGenerator:
     def get_generated_translation_file_name(self, dest_lang_code):
         return '{0}_generated_{1}.ts'.format(self.src_translation_file_name, dest_lang_code)
 
+    def get_generated_translation_file_path(self, dest_lang_code):
+        return '{0}/{1}'.format(self.output_dir, self.get_generated_translation_file_name(dest_lang_code))
 
     def translate(self, dest_lang_code):
         """Generates new Qt translation file that includes translation texts for language specified in the given dest_lang_code
@@ -54,13 +60,11 @@ class QtTranslationFileGenerator:
         limit_count  = 0
         for child_node in root:
             if child_node.tag == 'context' :
-                if limit_count > 5:
-                    break;
                 limit_count = limit_count + 1
                 self.__parse_translation_context(google_translator, child_node, dest_lang_code)
                 
 
-        tree.write(self.get_generated_translation_file_name(dest_lang_code))
+        tree.write(self.get_generated_translation_file_path(dest_lang_code))
 
     def __parse_translation_context(self, google_translator, context_node, dest_lang_code):
         for message_node in context_node.iter('message'):
@@ -82,12 +86,12 @@ class QtTranslationFileGenerator:
                 print('parse_message_node : Exception during translation of {0}. Exception : {1}'.format(source_node.text, str(e)))
 
     def write_translated_texts_to_file(self, dest_lang_code):
-        translation_file_path = self.get_generated_translation_file_name(dest_lang_code)
+        translation_file_path = self.get_generated_translation_file_path(dest_lang_code)
         
         with open(translation_file_path, 'rt') as f:
             tree = elementTree.parse(f);
     
-        output_file_name = 'translated_texts_{0}_{1}.txt'.format(self.src_translation_file_name, dest_lang_code)
+        output_file_name = '{0}/translated_texts_{1}_{2}.txt'.format(self.output_dir, self.src_translation_file_name, dest_lang_code)
         print('Writing all translated text from {0} to file {1} ...'.format(translation_file_path, output_file_name))
 
         out_file = open(output_file_name,"w", encoding="utf-8")
