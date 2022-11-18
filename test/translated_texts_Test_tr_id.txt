@@ -1,0 +1,13 @@
+E&xit:KELUAR
+&File:&Mengajukan
+Internationalization Example:Contoh internasionalisasi
+Language: %1:Bahasa: %1
+English:Ä°ngilizce
+View:Melihat
+Perspective:Perspektif
+Isometric:Isometrik
+Oblique:Miring
+First:First
+Second:Kedua
+Third:Ketiga
+LTR:Ltr

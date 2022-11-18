@@ -1,0 +1,13 @@
+E&xit:VÝCHOD
+&File:Súbor
+Internationalization Example:Príklad internacionalizácie
+Language: %1:Jazyk: %1
+English:Ä°ngilizce
+View:vyhliadka
+Perspective:Perspektíva
+Isometric:Izometrický
+Oblique:Šikmý
+First:First
+Second:Druhý
+Third:Tretí
+LTR:LTR

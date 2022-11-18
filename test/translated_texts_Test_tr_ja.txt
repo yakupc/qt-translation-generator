@@ -1,0 +1,13 @@
+E&xit:出口
+&File:＆ファイル
+Internationalization Example:国際化の例
+Language: %1:言語：％1
+English:Ä°ngilizce
+View:意見
+Perspective:視点
+Isometric:等尺性
+Oblique:斜め
+First:First
+Second:2番
+Third:三番
+LTR:LTR

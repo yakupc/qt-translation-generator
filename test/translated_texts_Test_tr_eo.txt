@@ -1,0 +1,13 @@
+E&xit:E & Xit
+&File:& Dosiero
+Internationalization Example:Internaciiga ekzemplo
+Language: %1:Lingvo: %1
+English:Ä°ngilizce
+View:Vido
+Perspective:Perspektivo
+Isometric:Izometria
+Oblique:Oblikva
+First:First
+Second:Due
+Third:Tria
+LTR:LTR

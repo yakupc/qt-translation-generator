@@ -1,0 +1,13 @@
+E&xit:E & xit
+&File:& טעקע
+Internationalization Example:ינטערנאַטיאָנאַליזאַטיאָן
+Language: %1:שפּראַך:% 1
+English:Ä°ngilizce
+View:מיינונג
+Perspective:פּערספּעקטיוו
+Isometric:יסאָמעטריק
+Oblique:אַבליק
+First:First
+Second:סעקונדע
+Third:דריט
+LTR:LTR

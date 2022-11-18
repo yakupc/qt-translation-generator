@@ -1,0 +1,13 @@
+E&xit:బయటకి దారి
+&File:& ఫైల్
+Internationalization Example:అంతర్జాతీయీకరణ ఉదాహరణ
+Language: %1:భాష: %1
+English:Ä°ngilizce
+View:చూడండి
+Perspective:దృష్టికోణం
+Isometric:ఐసోమెట్రిక్
+Oblique:వాలుగా
+First:First
+Second:రెండవ
+Third:మూడవది
+LTR:Ltr

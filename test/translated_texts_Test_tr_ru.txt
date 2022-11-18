@@ -1,0 +1,13 @@
+E&xit:Выход
+&File:&Файл
+Internationalization Example:Пример интернационализации
+Language: %1:Язык: %1
+English:Ä°ngilizce
+View:Вид
+Perspective:Перспектива
+Isometric:Изометрический
+Oblique:Косой
+First:First
+Second:Второй
+Third:В третьих
+LTR:LTR

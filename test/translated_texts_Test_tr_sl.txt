@@ -1,0 +1,13 @@
+E&xit:E & xit
+&File:&Mapa
+Internationalization Example:Primer internacionalizacije
+Language: %1:Jezik: %1
+English:Ä°ngilizce
+View:Pogled
+Perspective:Perspektiva
+Isometric:Izometrično
+Oblique:Poševno
+First:First
+Second:Drugi
+Third:Tretjič
+LTR:Ltr

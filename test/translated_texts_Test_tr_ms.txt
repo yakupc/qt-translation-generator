@@ -1,0 +1,13 @@
+E&xit:E & XIT
+&File:& Fail
+Internationalization Example:Contoh pengantarabangsaan
+Language: %1:Bahasa: %1
+English:Ä°ngilizce
+View:Lihat
+Perspective:Perspektif
+Isometric:Isometrik
+Oblique:Serong
+First:First
+Second:Kedua
+Third:Ketiga
+LTR:Ltr

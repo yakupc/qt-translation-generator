@@ -1,0 +1,13 @@
+E&xit:An slí amach
+&File:& Comhad
+Internationalization Example:Sampla idirnáisiúnaithe
+Language: %1:Teanga: %1
+English:Ä°ngilizce
+View:Amharc ar
+Perspective:Peirspictíocht
+Isometric:Isiméadrach
+Oblique:Imirceach
+First:First
+Second:An dara háit
+Third:Tríú
+LTR:LTR

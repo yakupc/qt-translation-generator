@@ -1,0 +1,13 @@
+E&xit:Kijárat
+&File:& Fájl
+Internationalization Example:Nemzetközivé válási példa
+Language: %1:Nyelv: %1
+English:Ä°ngilizce
+View:Kilátás
+Perspective:Perspektíva
+Isometric:Izometrikus
+Oblique:Ferde
+First:First
+Second:Második
+Third:Harmadik
+LTR:LTR

@@ -1,0 +1,13 @@
+E&xit:E & XIT
+&File:&ไฟล์
+Internationalization Example:ตัวอย่างสากล
+Language: %1:ภาษา: %1
+English:Ä°ngilizce
+View:ดู
+Perspective:ทัศนคติ
+Isometric:เกี่ยวกับภาพสามมิติ
+Oblique:เอียง
+First:First
+Second:ที่สอง
+Third:ที่สาม
+LTR:LTR

@@ -1,0 +1,13 @@
+E&xit:E & XIT
+&File:& Skrá
+Internationalization Example:Alþjóðavæðing dæmi
+Language: %1:Tungumál: %1
+English:Ä°ngilizce
+View:Útsýni
+Perspective:Sjónarhorn
+Isometric:Isometric
+Oblique:Ská
+First:First
+Second:Annað
+Third:Þriðja
+LTR:LTR

@@ -1,0 +1,13 @@
+E&xit:E & XIT
+&File:&Dossier
+Internationalization Example:Exemple d’internacionalització
+Language: %1:Idioma: %1
+English:Ä°ngilizce
+View:Visió
+Perspective:Perspectiva
+Isometric:Isomètric
+Oblique:Oblic
+First:First
+Second:Segona
+Third:Tercer
+LTR:LTR

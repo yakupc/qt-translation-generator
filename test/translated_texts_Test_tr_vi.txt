@@ -1,0 +1,13 @@
+E&xit:Lối ra
+&File:&Tập tin
+Internationalization Example:Ví dụ quốc tế hóa
+Language: %1:Ngôn ngữ: %1
+English:Ä°ngilizce
+View:Lượt xem
+Perspective:Luật xa gần
+Isometric:Isometric
+Oblique:Xiên
+First:First
+Second:Thứ hai
+Third:Ngày thứ ba
+LTR:LTR

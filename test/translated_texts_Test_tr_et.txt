@@ -1,0 +1,13 @@
+E&xit:E & XIT
+&File:& Fail
+Internationalization Example:Rahvusvahelistumise näide
+Language: %1:Keel: %1
+English:Ä°ngilizce
+View:Vaade
+Perspective:Perspektiiv
+Isometric:Isomeetriline
+Oblique:Kaldus
+First:First
+Second:Teine
+Third:Kolmas
+LTR:LTR

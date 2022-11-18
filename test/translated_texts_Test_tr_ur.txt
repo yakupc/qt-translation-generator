@@ -1,0 +1,13 @@
+E&xit:باہر نکلیں
+&File:& فائل
+Internationalization Example:عالمگیریت کی مثال
+Language: %1:زبان: ٪ 1
+English:Ä°ngilizce
+View:دیکھیں
+Perspective:نقطہ نظر
+Isometric:isometric
+Oblique:ترچھا
+First:First
+Second:دوسرا
+Third:تیسرے
+LTR:ltr

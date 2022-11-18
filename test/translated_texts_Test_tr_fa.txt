@@ -1,0 +1,13 @@
+E&xit:e & xit
+&File:&فایل
+Internationalization Example:نمونه بین المللی
+Language: %1:زبان: ٪ 1
+English:Ä°ngilizce
+View:چشم انداز
+Perspective:چشم انداز
+Isometric:وابسته به ایزومتریک
+Oblique:تحمیل کردن
+First:First
+Second:دومین
+Third:سوم
+LTR:ltr

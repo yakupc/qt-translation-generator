@@ -1,0 +1,13 @@
+E&xit:出口
+&File:＆文件
+Internationalization Example:国际化示例
+Language: %1:语言：％1
+English:Ä°ngilizce
+View:看法
+Perspective:看法
+Isometric:等距
+Oblique:斜
+First:First
+Second:第二
+Third:第三
+LTR:ltr

@@ -1,0 +1,13 @@
+E&xit:E & xit
+&File:& Failas
+Internationalization Example:Internacionalizacijos pavyzdys
+Language: %1:Kalba: %1
+English:Ä°ngilizce
+View:Vaizdas
+Perspective:Perspektyva
+Isometric:Izometrinis
+Oblique:Įstrižai
+First:First
+Second:Antra
+Third:Trečias
+LTR:Ltr

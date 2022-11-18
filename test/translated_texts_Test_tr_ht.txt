@@ -1,0 +1,13 @@
+E&xit:E & xit
+&File:& Ranpli
+Internationalization Example:Egzanp Entènasyonalizasyon
+Language: %1:Lang: %1
+English:Ä°ngilizce
+View:Vi
+Perspective:Pèspektiv
+Isometric:Izometrik
+Oblique:Oblik
+First:First
+Second:Dezyèm
+Third:Twazyèm
+LTR:LTR

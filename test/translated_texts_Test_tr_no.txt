@@ -1,0 +1,13 @@
+E&xit:Exit
+&File:&Fil
+Internationalization Example:Internasjonaliseringseksempel
+Language: %1:Språk: %1
+English:Ä°ngilizce
+View:Utsikt
+Perspective:Perspektiv
+Isometric:Isometrisk
+Oblique:Skrå
+First:First
+Second:Sekund
+Third:Tredje
+LTR:Ltr

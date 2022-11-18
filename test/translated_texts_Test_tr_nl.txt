@@ -1,0 +1,13 @@
+E&xit:Uitgang
+&File:&Bestand
+Internationalization Example:Internationalisering Voorbeeld
+Language: %1:Taal: %1
+English:Ä°ngilizce
+View:Visie
+Perspective:Perspectief
+Isometric:Isometrisch
+Oblique:Schuin
+First:First
+Second:Seconde
+Third:Derde
+LTR:LTR

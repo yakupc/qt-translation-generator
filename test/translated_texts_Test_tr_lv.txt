@@ -1,0 +1,13 @@
+E&xit:Izeja
+&File:& Fails
+Internationalization Example:Internacionalizācijas piemērs
+Language: %1:Valoda: %1
+English:Ä°ngilizce
+View:Skats
+Perspective:Perspektīva
+Isometric:Izometrisks
+Oblique:Slīps
+First:First
+Second:Sekunde
+Third:Trešais
+LTR:LTR

@@ -1,0 +1,13 @@
+E&xit:ಇ & ಕ್ಸಿಟ್
+&File:& ಫೈಲ್
+Internationalization Example:ಅಂತರರಾಷ್ಟ್ರೀಕರಣ ಉದಾಹರಣೆ
+Language: %1:ಭಾಷೆ: %1
+English:Ä°ngilizce
+View:ನೋಟ
+Perspective:ದೃಷ್ಟಿಕೋನ
+Isometric:ರೂಪರೇಖೆಯ
+Oblique:ಓರೆಯಾದ
+First:First
+Second:ಎರಡನೇ
+Third:ತೃತೀಯ
+LTR:ಎಲ್‌ಟಿಆರ್

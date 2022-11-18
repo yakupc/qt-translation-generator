@@ -1,0 +1,13 @@
+E&xit:Uscita
+&File:&File
+Internationalization Example:Esempio di internazionalizzazione
+Language: %1:Lingua: %1
+English:Ä°ngilizce
+View:Visualizzazione
+Perspective:Prospettiva
+Isometric:Isometric
+Oblique:Oblique
+First:First
+Second:Ä°kinci
+Third:Terzo
+LTR:LTR

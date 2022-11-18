@@ -1,0 +1,13 @@
+E&xit:E & Xit
+&File:& Fajl
+Internationalization Example:Eżempju ta 'internazzjonalizzazzjoni
+Language: %1:Lingwa:% 1
+English:Ä°ngilizce
+View:Veduta
+Perspective:Perspettiva
+Isometric:Isometrika
+Oblique:Oblikwu
+First:First
+Second:It-tieni
+Third:It-tielet
+LTR:Ltr

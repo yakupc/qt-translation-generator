@@ -1,0 +1,13 @@
+E&xit:E & XIT
+&File:A ffeil
+Internationalization Example:Enghraifft ryngwladoli
+Language: %1:Iaith: %1
+English:Ä°ngilizce
+View:Golygfa
+Perspective:Persbectif
+Isometric:Isometrig
+Oblique:Oblique
+First:First
+Second:Heiliwn
+Third:Nhrydydd
+LTR:Ltr

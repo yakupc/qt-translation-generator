@@ -1,0 +1,13 @@
+E&xit:E & Xit
+&File:Lima
+Internationalization Example:Internationalis example
+Language: %1:Language: I%
+English:Ä°ngilizce
+View:View
+Perspective:Perspective
+Isometric:Isometric
+Oblique:Obliquus
+First:First
+Second:Secundus
+Third:Tertio
+LTR:Ltr

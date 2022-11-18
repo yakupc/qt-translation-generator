@@ -1,0 +1,13 @@
+E&xit:E & xit
+&File:&Lêer
+Internationalization Example:Internasionale voorbeeld
+Language: %1:Taal: %1
+English:Ä°ngilizce
+View:Beskou
+Perspective:Perspektief
+Isometric:Isometries
+Oblique:Skuins
+First:First
+Second:Sekonde
+Third:Derde
+LTR:LT

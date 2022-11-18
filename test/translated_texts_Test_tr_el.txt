@@ -1,0 +1,13 @@
+E&xit:Εξοδος
+&File:&Αρχείο
+Internationalization Example:Παράδειγμα διεθνοποίησης
+Language: %1:Γλώσσα: %1
+English:Ä°ngilizce
+View:Θέα
+Perspective:Προοπτική
+Isometric:Ισομετρικός
+Oblique:Λοξός
+First:First
+Second:Δεύτερος
+Third:Τρίτος
+LTR:LTR

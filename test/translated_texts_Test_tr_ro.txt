@@ -1,0 +1,13 @@
+E&xit:Ieșire
+&File:&Fişier
+Internationalization Example:Exemplu de internaționalizare
+Language: %1:Limba: %1
+English:Ä°ngilizce
+View:Vedere
+Perspective:Perspectivă
+Isometric:Izometric
+Oblique:Oblic
+First:First
+Second:Al doilea
+Third:Al treilea
+LTR:Ltr

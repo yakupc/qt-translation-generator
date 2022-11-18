@@ -1,0 +1,13 @@
+E&xit:E & xit
+&File:& ფაილი
+Internationalization Example:ინტერნაციონალიზაციის მაგალითი
+Language: %1:ენა: %1
+English:Ä°ngilizce
+View:ხედი
+Perspective:პერსპექტივა
+Isometric:იზომეტრული
+Oblique:ოლიკი
+First:First
+Second:მეორე
+Third:მესამე
+LTR:LTR

@@ -1,0 +1,13 @@
+E&xit:E & xit
+&File:& Skedar
+Internationalization Example:Shembull ndërkombëtarizimi
+Language: %1:Gjuha: %1
+English:Ä°ngilizce
+View:Pamje
+Perspective:Prespektive
+Isometric:Isometrik
+Oblique:I zhdrejtë
+First:First
+Second:I dyti
+Third:I tretë
+LTR:LTR

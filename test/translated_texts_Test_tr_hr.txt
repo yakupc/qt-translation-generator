@@ -1,0 +1,13 @@
+E&xit:Izlaz
+&File:&Datoteka
+Internationalization Example:Primjer internacionalizacije
+Language: %1:Jezik: %1
+English:Ä°ngilizce
+View:Pogled
+Perspective:Perspektiva
+Isometric:Izometrijski
+Oblique:Kosi
+First:First
+Second:Drugi
+Third:Treći
+LTR:LTR

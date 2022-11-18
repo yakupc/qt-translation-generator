@@ -1,0 +1,13 @@
+E&xit:יְצִיאָה
+&File:&קוֹבֶץ
+Internationalization Example:דוגמה בינלאומית
+Language: %1:שפה: %1
+English:Ä°ngilizce
+View:נוף
+Perspective:נקודת מבט
+Isometric:שׁוֹמֵר מִדָה
+Oblique:אֲלַכסוֹנִי
+First:First
+Second:שְׁנִיָה
+Third:שְׁלִישִׁי
+LTR:Ltr

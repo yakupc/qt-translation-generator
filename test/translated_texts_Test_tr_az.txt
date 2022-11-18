@@ -1,0 +1,13 @@
+E&xit:E & xit
+&File:&Fayl
+Internationalization Example:Beynəlmiləlləşmə nümunəsi
+Language: %1:Dil:% 1
+English:Ä°ngilizce
+View:Baxış
+Perspective:Perspektiv
+Isometric:İzometrik
+Oblique:Oblique
+First:First
+Second:İkinci
+Third:Üçüncü
+LTR:Ltr

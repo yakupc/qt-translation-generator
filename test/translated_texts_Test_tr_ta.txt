@@ -1,0 +1,13 @@
+E&xit:மின் & xit
+&File:&கோப்பு
+Internationalization Example:சர்வதேசமயமாக்கல் எடுத்துக்காட்டு
+Language: %1:மொழி: %1
+English:Ä°ngilizce
+View:பார்வை
+Perspective:முன்னோக்கு
+Isometric:ஐசோமெட்ரிக்
+Oblique:சாய்ந்த
+First:First
+Second:இரண்டாவது
+Third:மூன்றாவது
+LTR:எல்.டி.ஆர்

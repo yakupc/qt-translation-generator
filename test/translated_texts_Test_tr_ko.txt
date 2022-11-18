@@ -1,0 +1,13 @@
+E&xit:출구
+&File:&파일
+Internationalization Example:국제화 예
+Language: %1:언어 : %1
+English:Ä°ngilizce
+View:보다
+Perspective:관점
+Isometric:아이소 메트릭
+Oblique:비스듬한
+First:First
+Second:초
+Third:제삼
+LTR:ltr

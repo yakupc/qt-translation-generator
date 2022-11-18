@@ -1,0 +1,13 @@
+E&xit:مخرج
+&File:&ملف
+Internationalization Example:مثال التدويل
+Language: %1:اللغة: ٪ 1
+English:Ä°ngilizce
+View:رأي
+Perspective:إنطباع
+Isometric:متساوي القياس
+Oblique:منحرف - مائل
+First:First
+Second:ثانيا
+Third:ثالث
+LTR:LTR

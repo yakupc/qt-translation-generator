@@ -1,0 +1,13 @@
+E&xit:Utgång
+&File:& Faili
+Internationalization Example:Mfano wa utandawazi
+Language: %1:Lugha: %1
+English:Ä°ngilizce
+View:Mtazamo
+Perspective:Mtazamo
+Isometric:Isometric
+Oblique:Oblique
+First:First
+Second:Pili
+Third:Cha tatu
+LTR:Ltr

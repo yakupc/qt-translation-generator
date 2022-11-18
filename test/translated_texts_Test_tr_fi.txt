@@ -1,0 +1,13 @@
+E&xit:E & XIT
+&File:Ja tiedosto
+Internationalization Example:Kansainvälistymisesimerkki
+Language: %1:Kieli: %1
+English:Ä°ngilizce
+View:Näkymä
+Perspective:Näkökulma
+Isometric:Isometrinen
+Oblique:Vino
+First:First
+Second:Toinen
+Third:Kolmas
+LTR:Litramerkki

@@ -1,0 +1,13 @@
+E&xit:बाहर निकलना
+&File:&फ़ाइल
+Internationalization Example:अंतर्राष्ट्रीयकरण उदाहरण
+Language: %1:भाषा: %1
+English:Ä°ngilizce
+View:राय
+Perspective:परिप्रेक्ष्य
+Isometric:सममितीय
+Oblique:परोक्ष
+First:First
+Second:दूसरा
+Third:तीसरा
+LTR:एल टीआर

@@ -1,0 +1,13 @@
+E&xit:E & xit
+&File:& File
+Internationalization Example:Halimbawa ng Internationalization
+Language: %1:Wika: %1
+English:Ä°ngilizce
+View:Tingnan
+Perspective:Pananaw
+Isometric:Isometric
+Oblique:Pahilig
+First:First
+Second:Pangalawa
+Third:Pangatlo
+LTR:Ltr
