@@ -69,13 +69,15 @@ class QtTranslationFileGenerator:
     def __parse_message_node(self, google_translator, message_node, dest_lang_code):
         source_node = message_node.find('source')
         translate_node = message_node.find('translation')
+        
         if translate_node is not None:
             try:
-                translation_type = translate_node.attrib["type"]
-                if translation_type == 'unfinished':
-                    translated_text = google_translator.translate(source_node.text, src='en', dest=dest_lang_code).text
-                    translate_node.text = translated_text
-                    print('{0} : {1}'.format(source_node.text, translated_text))
+                if "type" in translate_node.attrib:
+                    attr_translation_type = translate_node.attrib["type"]    
+                    if attr_translation_type == 'unfinished':
+                        translated_text = google_translator.translate(source_node.text, src='en', dest=dest_lang_code).text
+                        translate_node.text = translated_text
+                        print('{0} : {1}'.format(source_node.text, translated_text))
             except Exception as e:
                 print('parse_message_node : Exception during translation of {0}. Exception : {1}'.format(source_node.text, str(e)))
 
