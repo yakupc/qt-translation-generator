@@ -16,7 +16,7 @@ Use following command to install the package in **editable/development mode**.
 ```
 python setup.py install -e .
 ```
-#Usage
+# Usage
 Following code used to translate all texts from Test_tr.ts file and generate Test_tr_generated.tr.ts file. 
 ```
 from qttranslationgenerator import * 
