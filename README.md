@@ -19,24 +19,34 @@ python setup.py install -e .
 # Usage
 Following code used to translate all texts from Test_tr.ts file and generate Test_tr_generated.tr.ts file. 
 ```
-from qttranslationgenerator import * 
-
-if __name__ == "__main__":
+def translate_to(src_translation_file, target_lang_code):
     try:
-        qtTranslationFileGenerator = QtTranslationFileGenerator('Test_tr.ts')
-        qtTranslationFileGenerator.translate('tr')
-        qtTranslationFileGenerator.write_translated_texts_to_file('tr')
+        qt_translation_file_generator = QtTranslationFileGenerator(src_translation_file, target_lang_code)
+        qt_translation_file_generator.translate(target_lang_code)
+        qt_translation_file_generator.write_translated_texts_to_file(target_lang_code)
     except Exception as e:
         print('Exception {0}'.format(str(e)))
 ```
 Following code can be used to generate translation files for all supported languages.
 ```
-for key in language_dict:
-    target_lang_code = key
-    qtTranslationFileGenerator = QtTranslationFileGenerator('Test_tr.ts')
-    qtTranslationFileGenerator.translate(target_lang_code)
-    qtTranslationFileGenerator.write_translated_texts_to_file(target_lang_code)
+def translate_to_all_languages(src_translation_file):
+    try:
+        for key in language_dict:
+            translate_to(src_translation_file, key)
+    except Exception as e:
+        print('Exception {0}'.format(str(e)))
 ```
+
+main function
+```
+if __name__ == "__main__":
+    try:
+        #translate_to('Test_tr.ts', 'tr')
+        translate_to_all_languages('Test_tr.ts')
+    except Exception as e:
+        print('Exception {0}'.format(str(e)))
+```
+
 # Language Codes
 Google translate API supports following languages
 ```
