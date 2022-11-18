@@ -16,6 +16,13 @@ Use following command to install the package in **editable/development mode**.
 ```
 python setup.py install -e .
 ```
+
+# Requirements
+To install all dependencies used in the package, use following command. No need to run if you install by using setup.py 
+```
+pip install -r /path/to/requirements.txt
+```
+
 # Usage
 Following code used to translate all texts from Test_tr.ts file and generate Test_tr_generated.tr.ts file. 
 ```
