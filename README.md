@@ -1,5 +1,5 @@
 # Qt Translation Generator
-Translates Qt Linguist TS file to different languages via Google Translate API. Supported languages are listed in [Language Codes](#language-codes) section.
+Translates Qt Linguist TS file to different languages via Google Translate API. Supported languages are listed in [Language Codes](#language-codes) section. **The package is under development!**
 
 # Installation
 Download the package.
