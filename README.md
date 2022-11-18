@@ -10,6 +10,11 @@ Open terminal and enter:
 ```
 python setup.py install
 ```
+
+Use following command to install the package in **editable/development mode**.
+```
+python setup.py install -e .
+```
 #Usage
 ```
 from qttranslationgenerator import * 
