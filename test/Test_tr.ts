@@ -1,41 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
 <TS version="2.1" language="tr_TR" sourcelanguage="en_US">
 <context>
     <name>MainWindow</name>
     <message>
         <source>E&amp;xit</source>
-        <translation type="unfinished">&#199;&#305;k&#305;&#351;</translation>
+        <translation type="unfinished">E&amp;xit</translation>
     </message>
     <message>
         <source>&amp;File</source>
-        <translation type="unfinished">&amp;Dosya</translation>
+        <translation type="unfinished">&amp;File</translation>
     </message>
     <message>
         <source>Internationalization Example</source>
-        <translation type="unfinished">Uluslararas&#305;la&#351;ma &#246;rne&#287;i</translation>
+        <translation type="unfinished">Internationalization Example</translation>
     </message>
     <message>
         <source>Language: %1</source>
-        <translation type="unfinished">Dil: %1</translation>
+        <translation type="unfinished">Language: %1</translation>
     </message>
     <message>
         <source>English</source>
-        <translation>&#196;&#176;ngilizce</translation>
+        <translation>İngilizce</translation>
     </message>
     <message>
         <source>View</source>
-        <translation type="unfinished">g&#246;r&#252;&#351;</translation>
+        <translation type="unfinished">View</translation>
     </message>
     <message>
         <source>Perspective</source>
-        <translation type="unfinished">Perspektif</translation>
+        <translation type="unfinished">Perspective</translation>
     </message>
     <message>
         <source>Isometric</source>
-        <translation type="unfinished">E&#351; &#246;l&#231;&#252;l&#252;</translation>
+        <translation type="unfinished">Isometric</translation>
     </message>
     <message>
         <source>Oblique</source>
-        <translation type="unfinished">E&#287;ik</translation>
+        <translation type="unfinished">Oblique</translation>
     </message>
     <message>
         <source>First</source>
@@ -43,11 +45,11 @@
     </message>
     <message>
         <source>Second</source>
-        <translation type="unfinished">&#304;kinci</translation>
+        <translation type="unfinished">İkinci</translation>
     </message>
     <message>
         <source>Third</source>
-        <translation type="unfinished">&#220;&#231;&#252;nc&#252;</translation>
+        <translation type="unfinished">Third</translation>
     </message>
     <message>
         <source>LTR</source>

@@ -7,7 +7,7 @@ View:görüş
 Perspective:Perspektif
 Isometric:Eş ölçülü
 Oblique:Eğik
-First:Birinci
+First:First
 Second:İkinci
 Third:Üçüncü
 LTR:LTR
