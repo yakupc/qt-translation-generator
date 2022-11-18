@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as elementTree
 from googletrans import Translator
 import os
-from language_codes import language_dict
+from .language_codes import language_dict
 
 class QtTranslationFileGenerator:
     def __init__(self, src_translation_file_path) -> None:
@@ -21,7 +21,7 @@ class QtTranslationFileGenerator:
         print(self.src_translation_file_name)
 
     def get_generated_translation_file_name(self, dest_lang_code):
-        return '{0}_generated_{1}.xml'.format(self.src_translation_file_name, dest_lang_code)
+        return '{0}_generated_{1}.ts'.format(self.src_translation_file_name, dest_lang_code)
 
 
     def translate(self, dest_lang_code):
@@ -57,25 +57,27 @@ class QtTranslationFileGenerator:
                 if limit_count > 5:
                     break;
                 limit_count = limit_count + 1
-                self.__parse_translation_context(google_translator, child_node)
+                self.__parse_translation_context(google_translator, child_node, dest_lang_code)
                 
 
         tree.write(self.get_generated_translation_file_name(dest_lang_code))
 
-    def __parse_translation_context(self, google_translator, context_node):
+    def __parse_translation_context(self, google_translator, context_node, dest_lang_code):
         for message_node in context_node.iter('message'):
-            self.__parse_message_node(google_translator, message_node)
+            self.__parse_message_node(google_translator, message_node, dest_lang_code)
 
-    def __parse_message_node(self, google_translator, message_node):
+    def __parse_message_node(self, google_translator, message_node, dest_lang_code):
         source_node = message_node.find('source')
         translate_node = message_node.find('translation')
         if translate_node is not None:
             try:
-                translated_text = google_translator.translate(source_node.text, src='en', dest=dest_lang_code).text
-                translate_node.text = translated_text
-                print(source_node.text, ':', translated_text)
+                translation_type = translate_node.attrib["type"]
+                if translation_type == 'unfinished':
+                    translated_text = google_translator.translate(source_node.text, src='en', dest=dest_lang_code).text
+                    translate_node.text = translated_text
+                    print('{0} : {1}'.format(source_node.text, translated_text))
             except Exception as e:
-                print('Exception during translation of {0}. Exception : {1}'.format(source_node.text, str(e)))
+                print('parse_message_node : Exception during translation of {0}. Exception : {1}'.format(source_node.text, str(e)))
 
     def write_translated_texts_to_file(self, dest_lang_code):
         translation_file_path = self.get_generated_translation_file_name(dest_lang_code)
@@ -86,7 +88,7 @@ class QtTranslationFileGenerator:
         output_file_name = 'translated_texts_{0}_{1}.txt'.format(self.src_translation_file_name, dest_lang_code)
         print('Writing all translated text from {0} to file {1} ...'.format(translation_file_path, output_file_name))
 
-        out_file = open(output_file_name,"a")
+        out_file = open(output_file_name,"w", encoding="utf-8")
         root = tree.getroot()
         
         for child_node in root:
@@ -98,7 +100,6 @@ class QtTranslationFileGenerator:
                     if translate_node is not None:
                         try:
                             out_file.write('{0}:{1}\n'.format(source_node.text,translate_node.text))
-                            print('.')
                         except Exception as e:
                             print('Exception during writing of {0} to file. Exception : {1}'.format(source_node.text, str(e)))
         out_file.close()

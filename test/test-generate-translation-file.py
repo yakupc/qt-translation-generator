@@ -1,8 +1,8 @@
-from qt_translation_file_generator import QtTranslationFileGenerator
+from qttranslationgenerator import * 
 
 if __name__ == "__main__":
     try:
-        qtTranslationFileGenerator = QtTranslationFileGenerator('GUI_tr_TR.ts')
+        qtTranslationFileGenerator = QtTranslationFileGenerator('Test_tr.ts')
         qtTranslationFileGenerator.translate('tr')
         qtTranslationFileGenerator.write_translated_texts_to_file('tr')
     except Exception as e:

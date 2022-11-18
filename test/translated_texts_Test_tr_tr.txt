@@ -1,0 +1,13 @@
+E&xit:Çıkış
+&File:&Dosya
+Internationalization Example:Uluslararasılaşma örneği
+Language: %1:Dil: %1
+English:Ä°ngilizce
+View:görüş
+Perspective:Perspektif
+Isometric:Eş ölçülü
+Oblique:Eğik
+First:Birinci
+Second:İkinci
+Third:Üçüncü
+LTR:LTR

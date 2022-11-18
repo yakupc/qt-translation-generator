@@ -1,0 +1,14 @@
+Uninstall your installed version of
+
+pip uninstall googletrans
+Install the following version
+
+pip install googletrans==4.0.0rc1
+I hope this will works for you as it worked for me.
+
+You can try it now:
+
+from googletrans import Translator
+translator = Translator()
+ar = translator.translate('مرحبا').text
+print(ar)
