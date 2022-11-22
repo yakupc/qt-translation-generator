@@ -1,4 +1,5 @@
 import xml.etree.ElementTree as elementTree
+import time
 from googletrans import Translator
 import os
 from .language_codes import language_dict
@@ -82,9 +83,12 @@ class QtTranslationFileGenerator:
                         source_text = source_node.text
                         # replace & character
                         source_text = source_text.replace("&", "")
+                        
+                        #print('Translating {0} ...'.format(source_text))
                         translated_text = google_translator.translate(source_text, src='en', dest=dest_lang_code).text
                         translate_node.text = translated_text
                         print('{0} : {1}'.format(source_text, translated_text))
+                        time.sleep(1)
             except Exception as e:
                 print('parse_message_node : Exception during translation of {0}. Exception : {1}'.format(source_node.text, str(e)))
 
