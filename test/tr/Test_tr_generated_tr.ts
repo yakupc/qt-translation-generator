@@ -3,11 +3,11 @@
     <name>MainWindow</name>
     <message>
         <source>E&amp;xit</source>
-        <translation type="unfinished">&#199;&#305;k&#305;&#351;</translation>
+        <translation type="unfinished">&#231;&#305;k&#305;&#351;</translation>
     </message>
     <message>
         <source>&amp;File</source>
-        <translation type="unfinished">&amp;Dosya</translation>
+        <translation type="unfinished">Dosya</translation>
     </message>
     <message>
         <source>Internationalization Example</source>

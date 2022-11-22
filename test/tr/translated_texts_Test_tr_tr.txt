@@ -1,5 +1,5 @@
-E&xit:Çıkış
-&File:&Dosya
+E&xit:çıkış
+&File:Dosya
 Internationalization Example:Uluslararasılaşma örneği
 Language: %1:Dil: %1
 English:Ä°ngilizce

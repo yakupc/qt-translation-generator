@@ -18,7 +18,7 @@ def translate_to_all_languages(src_translation_file):
 
 if __name__ == "__main__":
     try:
-        #translate_to('Test_tr.ts', 'tr')
-        translate_to_all_languages('Test_tr.ts')
+        translate_to('Test_tr.ts', 'tr')
+        #translate_to_all_languages('Test_tr.ts')
     except Exception as e:
         print('Exception {0}'.format(str(e)))

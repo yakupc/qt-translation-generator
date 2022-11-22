@@ -7,11 +7,11 @@ with open('LICENSE') as f:
     license = f.read()
 
 setup(name='qttranslationgenerator',
-      version='0.0.1',
+      version='0.0.2',
       description='qt translation generator',
       long_description=readme,
       url='https://github.com/yakupc/qt-translation-generator',
-      download_url='https://github.com/yakupc/qt-translation-generator.git'
+      download_url='https://github.com/yakupc/qt-translation-generator.git',
       author='Yakup Cengiz',
       author_email='yakupcengiz@gmail.com',
       license=license,

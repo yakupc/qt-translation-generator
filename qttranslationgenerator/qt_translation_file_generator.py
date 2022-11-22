@@ -79,9 +79,12 @@ class QtTranslationFileGenerator:
                 if "type" in translate_node.attrib:
                     attr_translation_type = translate_node.attrib["type"]    
                     if attr_translation_type == 'unfinished':
-                        translated_text = google_translator.translate(source_node.text, src='en', dest=dest_lang_code).text
+                        source_text = source_node.text
+                        # replace & character
+                        source_text = source_text.replace("&", "")
+                        translated_text = google_translator.translate(source_text, src='en', dest=dest_lang_code).text
                         translate_node.text = translated_text
-                        print('{0} : {1}'.format(source_node.text, translated_text))
+                        print('{0} : {1}'.format(source_text, translated_text))
             except Exception as e:
                 print('parse_message_node : Exception during translation of {0}. Exception : {1}'.format(source_node.text, str(e)))
 
