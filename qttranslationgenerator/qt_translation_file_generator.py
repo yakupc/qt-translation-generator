@@ -16,6 +16,7 @@ class QtTranslationFileGenerator:
         # get file name without extension
         self.src_translation_file_name = os.path.splitext(self.src_translation_file_name)[0] 
         self.output_dir                = output_dir
+        self.translated_text_map       = {}
         
         if not os.path.exists(output_dir):
             os.mkdir(output_dir)
@@ -80,17 +81,42 @@ class QtTranslationFileGenerator:
                 if "type" in translate_node.attrib:
                     attr_translation_type = translate_node.attrib["type"]    
                     if attr_translation_type == 'unfinished':
-                        source_text = source_node.text
-                        # replace & character
-                        source_text = source_text.replace("&", "")
-                        
-                        #print('Translating {0} ...'.format(source_text))
-                        translated_text = google_translator.translate(source_text, src='en', dest=dest_lang_code).text
-                        translate_node.text = translated_text
-                        print('{0} : {1}'.format(source_text, translated_text))
-                        time.sleep(1)
+                        source_text = self.replace_special_characters(source_node.text)
+
+                        if source_text in self.translated_text_map:
+                            translate_node.text = self.translated_text_map[source_text]
+                            #print('{0} has already been translated to {1}'.format(source_text, translate_node.text))
+                        else:
+                            #print('Translating {0} ...'.format(source_text))
+                            translated_text = google_translator.translate(source_text, src='en', dest=dest_lang_code).text
+                            translate_node.text = translated_text
+                            self.translated_text_map[source_text] = translated_text
+                            print('{0} : {1}'.format(source_text, translated_text))
+                            time.sleep(1)
             except Exception as e:
                 print('parse_message_node : Exception during translation of {0}. Exception : {1}'.format(source_node.text, str(e)))
+
+    def replace_special_characters(self, str_in):
+        """Replaces escape sequence in XML file with special characters 
+        Special Character   Escape Sequence Purpose  
+         &                   &amp;           Ampersand sign 
+         '                   &apos;          Single quote 
+         "                   &quot;          Double quote
+         >                   &gt;            Greater than 
+         <                   &lt;            Less than
+
+        Args:
+            str_in (string): input string to be replaced
+        """
+        str_out = str_in
+        str_out = str_out.replace("&quot;", "\"")
+        str_out = str_out.replace("&apos;", "\'")
+        str_out = str_out.replace("&lt;",   "<")
+        str_out = str_out.replace("&gt;",   ">")
+        str_out = str_out.replace("&amp;",  "\&")
+        str_out = str_out.replace("&",      "")
+        return str_out
+        
 
     def write_translated_texts_to_file(self, dest_lang_code):
         translation_file_path = self.get_generated_translation_file_path(dest_lang_code)
