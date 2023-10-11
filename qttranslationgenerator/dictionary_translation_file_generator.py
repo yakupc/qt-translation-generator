@@ -5,9 +5,24 @@ import os
 from .language_codes import language_dict
 
 
-class QtTranslationFileGenerator:
-    def __init__(self, src_translation_file_path, output_dir = '.') -> None:
-        """Initializes Qt translation file generator
+class DictionaryTranslationFileGenerator:
+    def __init__(self, src_translation_file_path, output_dir='.') -> None:
+        """Initializes dictionary translation file generator
+        
+        Expected XML file format:
+            <LANGUAGE>
+                <DICTIONARY>
+                    <KEY name="" value="" source="" />
+                    <KEY name="" value="" source="" />
+                    ..
+                </DICTIONARY>
+                ..
+                ..
+                <DICTIONARY>
+                ..
+                ..
+                </DICTIONARY>
+            </LANGUAGE>
 
         Args:
             src_translation_file_path (string): Source translation file path
@@ -30,7 +45,7 @@ class QtTranslationFileGenerator:
         print(self.src_translation_file_name)
 
     def get_generated_translation_file_name(self, dest_lang_code):
-        return '{0}_generated.ts'.format(self.src_translation_file_name)
+        return '{0}_generated.xml'.format(self.src_translation_file_name)
 
     def get_generated_translation_file_path(self, dest_lang_code):
         return '{0}/{1}'.format(self.output_dir, self.get_generated_translation_file_name(dest_lang_code))
@@ -65,45 +80,47 @@ class QtTranslationFileGenerator:
         root = tree.getroot()
         google_translator = Translator()
         for child_node in root:
-            if child_node.tag == 'context':
+            if child_node.tag == 'DICTIONARY':
                 self.__parse_translation_context(
                     google_translator, child_node, dest_lang_code)
 
+        print(self.get_generated_translation_file_path(dest_lang_code))
         tree.write(self.get_generated_translation_file_path(
             dest_lang_code), encoding="UTF-8", xml_declaration=True)
 
     def __parse_translation_context(self, google_translator, context_node, dest_lang_code):
-        for message_node in context_node.iter('message'):
+        for message_node in context_node.iter('KEY'):
             self.__parse_message_node(
                 google_translator, message_node, dest_lang_code)
 
-    def __parse_message_node(self, google_translator, message_node, dest_lang_code):
-        source_node = message_node.find('source')
-        translate_node = message_node.find('translation')
+    def __parse_message_node(self, google_translator, key_node, dest_lang_code):
+        try:
+            #attr_key_name = key_node.attrib['name']
+            if "source" in key_node.attrib:
+                source_text = key_node.attrib['source']
+            elif "value" in key_node.attrib:
+                source_text = key_node.attrib['value']
+                key_node.set('source', source_text)
+            else:
+                print('source text not found!')
+                return
 
-        if translate_node is not None:
-            try:
-                if "type" in translate_node.attrib:
-                    attr_translation_type = translate_node.attrib["type"]
-                    if attr_translation_type == 'unfinished':
-                        source_text = self.replace_special_characters(
-                            source_node.text)
-
-                        if source_text in self.translated_text_map:
-                            translate_node.text = self.translated_text_map[source_text]
-                            #print('{0} has already been translated to {1}'.format(source_text, translate_node.text))
-                        else:
-                            #print('Translating {0} ...'.format(source_text))
-                            translated_text = google_translator.translate(
-                                source_text, src='en', dest=dest_lang_code).text
-                            translate_node.text = translated_text
-                            self.translated_text_map[source_text] = translated_text
-                            print('{0} : {1}'.format(
-                                source_text, translated_text))
-                            time.sleep(1)
-            except Exception as e:
-                print('parse_message_node : Exception during translation of {0}. Exception : {1}'.format(
-                    source_node.text, str(e)))
+            if source_text in self.translated_text_map:
+                translated_text = self.translated_text_map[source_text]
+                print('{0} has already been translated to {1}'.format(
+                    source_text, translated_text))
+                key_node.set('value', translated_text)
+            else:
+                #print('Translating {0} ...'.format(source_text))
+                translated_text = google_translator.translate(
+                    source_text, src='en', dest=dest_lang_code).text
+                key_node.set('value', translated_text)
+                self.translated_text_map[source_text] = translated_text
+                print('{0} : {1}'.format(source_text, translated_text))
+                time.sleep(1)
+        except Exception as e:
+            print('parse_message_node : Exception during translation of {0}. Exception : {1}'.format(
+                source_text, str(e)))
 
     def replace_special_characters(self, str_in):
         """Replaces escape sequence in XML file with special characters 

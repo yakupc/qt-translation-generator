@@ -7,7 +7,7 @@ with open('LICENSE') as f:
     license = f.read()
 
 setup(name='qttranslationgenerator',
-      version='0.0.2',
+      version='0.0.4',
       description='qt translation generator',
       long_description=readme,
       url='https://github.com/yakupc/qt-translation-generator',
